@@ -1,11 +1,13 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Article, KeywordSuggestion } from '../types';
 
-if (!process.env.API_KEY) {
+const apiKey = process.env.GEMINI_API_KEY;
+
+if (!apiKey) {
     throw new Error("API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey });
 
 const articleSchema = {
     type: Type.OBJECT,
@@ -33,7 +35,7 @@ const articleSchema = {
                         description: "The paragraph(s) for this section. The content should be informative, easy to read, and naturally incorporate the primary keyword and related LSI keywords. Write at least 2-3 paragraphs per section.",
                     },
                 },
-                 required: ["heading", "content"],
+                required: ["heading", "content"],
             },
         },
         faq: {
@@ -51,7 +53,7 @@ const articleSchema = {
                         description: "A clear and concise answer to the question.",
                     },
                 },
-                 required: ["question", "answer"],
+                required: ["question", "answer"],
             },
         },
         lsiKeywords: {
@@ -67,7 +69,7 @@ const articleSchema = {
 
 
 export const generateSeoArticle = async (
-    topic: string, 
+    topic: string,
     length: 'very short' | 'short' | 'medium' | 'long' | 'very long' | 'epic',
     userLsiKeywords: string[],
     locales: string[],
@@ -90,7 +92,7 @@ export const generateSeoArticle = async (
             ? `In addition to the keywords you identify, you MUST naturally incorporate the following user-provided keywords into the article: ${userLsiKeywords.join(', ')}.`
             : '';
 
-        const tablePrompt = includeTable 
+        const tablePrompt = includeTable
             ? "If the topic is suitable (e.g., for comparisons, data, specifications), include one relevant, well-structured markdown table within the article content."
             : "";
 
@@ -109,7 +111,7 @@ export const generateSeoArticle = async (
                     responseSchema: articleSchema,
                 },
             });
-            
+
             const jsonText = response.text.trim();
             const articleData: Article = JSON.parse(jsonText);
             return { locale, articleData };
@@ -120,7 +122,7 @@ export const generateSeoArticle = async (
         results.forEach(({ locale, articleData }) => {
             articlesByLocale[locale] = articleData;
         });
-        
+
         return articlesByLocale;
 
     } catch (error) {
@@ -187,9 +189,9 @@ export const generateArticleImage = async (prompt: string): Promise<string> => {
             model: 'imagen-4.0-generate-001',
             prompt: prompt,
             config: {
-              numberOfImages: 1,
-              outputMimeType: 'image/jpeg',
-              aspectRatio: '16:9',
+                numberOfImages: 1,
+                outputMimeType: 'image/jpeg',
+                aspectRatio: '16:9',
             },
         });
 
