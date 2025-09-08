@@ -1,7 +1,7 @@
 import { defaultUiLocale, defaultArticleLocales } from '../i18n/config';
 
 const API_URL_KEY = 'seo-wizard-api-url';
-const DEFAULT_API_URL = process.env.DEFAULT_API_URL;
+const DEFAULT_API_URL = process.env.DEFAULT_API_URL || 'https://seo-wizard-server.vercel.app';
 const UI_LOCALE_KEY = 'seo-wizard-ui-locale';
 const ARTICLE_LOCALES_KEY = 'seo-wizard-article-locales';
 
