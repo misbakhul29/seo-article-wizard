@@ -1,0 +1,175 @@
+
+{
+  "app": {
+    "title": {
+      "main": "SEO Article",
+      "span": "Wizard"
+    },
+    "subtitle": "Your AI-powered assistant for strategic content creation."
+  },
+  "nav": {
+    "generator": "Generator",
+    "research": "Research",
+    "savedArticles": "Saved Articles",
+    "settings": "Settings"
+  },
+  "generator": {
+    "form": {
+      "topic": {
+        "label": "Enter your primary keyword or article topic",
+        "placeholder": "e.g., 'Benefits of intermittent fasting'"
+      },
+      "lsi": {
+        "label": "Related Keywords (comma-separated)",
+        "placeholder": "e.g., fasting benefits, weight loss, metabolic health"
+      },
+      "length": {
+        "label": "Select Article Length",
+        "veryshort": "Very Short (~250 words)",
+        "short": "Short (~500 words)",
+        "medium": "Medium (~1000 words)",
+        "long": "Long (~1500 words)",
+        "verylong": "Very Long (~2000+ words)",
+        "epic": "Epic (~3000+ words)"
+      },
+      "options": {
+        "label": "Additional Options",
+        "table": "Include a data table",
+        "images": "Add image placeholders"
+      },
+      "button": {
+        "generate": "Generate Article",
+        "generating": "Generating..."
+      }
+    },
+    "initial": {
+      "message": "Your generated article will appear here. Start by entering a topic above."
+    }
+  },
+  "error": {
+    "title": "An error occurred:",
+    "fetch": {
+      "saved": "Could not fetch saved articles. Is the API server running or the URL correct?"
+    },
+    "save": "Failed to save article. Is the API server running or the URL correct?",
+    "delete": "Failed to delete article. Is the API server running or the URL correct?",
+    "generate": {
+      "image": "Failed to generate image."
+    },
+    "upload": {
+      "image": "Failed to upload image. Check your API server's image upload endpoint and configuration."
+    }
+  },
+  "article": {
+    "save": {
+      "button": {
+        "main": "Save Article",
+        "saving": "Saving...",
+        "saved": "Saved"
+      }
+    },
+    "export": {
+      "button": "Export",
+      "copy": "Copy to Clipboard",
+      "copied": "Copied!",
+      "download": {
+        "txt": "Download as Text (.txt)",
+        "md": "Download as Markdown (.md)"
+      }
+    },
+    "image": {
+      "generating": "Generating stunning visuals...",
+      "prompt": "A great article deserves a great image.",
+      "button": "Generate Header Image"
+    },
+    "meta": {
+      "title": "Meta Description"
+    },
+    "seo": {
+      "title": "SEO Analysis",
+      "wordcount": "Total Word Count:",
+      "highlight": "Highlight Keywords",
+      "table": {
+        "keyword": "Keyword",
+        "frequency": "Frequency",
+        "density": "Density"
+      },
+      "keyword": {
+        "primary": "(Primary)",
+        "user": "(User)"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    },
+    "intent": {
+      "title": "Primary Search Intent",
+      "informational": "The user is looking for information, facts, or answers to a specific question.",
+      "commercial": "The user is investigating products, services, or brands before making a purchase.",
+      "transactional": "The user wants to complete a specific action, such as buying a product or signing up.",
+      "navigational": "The user is trying to navigate to a specific website or physical location."
+    }
+  },
+  "research": {
+    "form": {
+      "topic": {
+        "label": "Enter a topic for keyword research",
+        "placeholder": "e.g., 'home gardening'"
+      },
+      "button": {
+        "research": "Research Keywords",
+        "researching": "Researching..."
+      }
+    },
+    "filter": {
+      "placeholder": "Filter keywords..."
+    },
+    "use": {
+      "button": "Use {count} Selected Keywords"
+    },
+    "table": {
+      "keyword": "Keyword",
+      "type": "Type",
+      "intent": "Intent",
+      "relevance": "Relevance"
+    },
+    "initial": {
+      "message": "Your keyword research results will appear here. Start by entering a topic above."
+    }
+  },
+  "saved": {
+    "empty": {
+      "message": "You haven't saved any articles yet. Generated articles can be saved here for later viewing."
+    },
+    "keyword": {
+      "label": "Primary Keyword:"
+    },
+    "date": {
+      "label": "Saved on:"
+    },
+    "view": {
+      "button": "View"
+    },
+    "delete": {
+      "button": "Delete"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "apiUrl": {
+      "label": "API Server URL",
+      "description": "This URL is used for saving and retrieving articles. It is stored locally in your browser."
+    },
+    "uiLanguage": {
+      "label": "UI Language"
+    },
+    "articleLanguages": {
+      "label": "Article Generation Languages",
+      "description": "Select the languages you want the articles to be generated in."
+    },
+    "saveButton": {
+      "main": "Save Settings",
+      "saved": "Saved!"
+    }
+  }
+}

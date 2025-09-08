@@ -1,0 +1,120 @@
+
+{
+  "app": {
+    "title": {
+      "main": "Wizard",
+      "span": "Artikel SEO"
+    },
+    "subtitle": "Asisten bertenaga AI Anda untuk pembuatan konten strategis."
+  },
+  "nav": {
+    "generator": "Generator",
+    "research": "Riset",
+    "savedArticles": "Artikel Tersimpan",
+    "settings": "Pengaturan"
+  },
+  "generator": {
+    "form": {
+      "topic": {
+        "label": "Masukkan kata kunci utama atau topik artikel Anda",
+        "placeholder": "contoh, 'Manfaat puasa intermiten'"
+      },
+      "lsi": {
+        "label": "Kata Kunci Terkait (dipisahkan koma)",
+        "placeholder": "contoh, manfaat puasa, penurunan berat badan, kesehatan metabolik"
+      },
+      "length": {
+        "label": "Pilih Panjang Artikel",
+        "veryshort": "Sangat Pendek (~250 kata)",
+        "short": "Pendek (~500 kata)",
+        "medium": "Sedang (~1000 kata)",
+        "long": "Panjang (~1500 kata)",
+        "verylong": "Sangat Panjang (~2000+ kata)",
+        "epic": "Epik (~3000+ kata)"
+      },
+      "options": {
+        "label": "Opsi Tambahan",
+        "table": "Sertakan tabel data",
+        "images": "Tambahkan placeholder gambar"
+      },
+      "button": {
+        "generate": "Buat Artikel",
+        "generating": "Membuat..."
+      }
+    }
+  },
+  "error": {
+    "title": "Terjadi kesalahan:",
+    "upload": {
+      "image": "Gagal mengunggah gambar. Periksa titik akhir dan konfigurasi unggah gambar di server API Anda."
+    }
+  },
+  "article": {
+    "save": {
+      "button": {
+        "main": "Simpan Artikel",
+        "saving": "Menyimpan...",
+        "saved": "Tersimpan"
+      }
+    },
+    "export": {
+      "button": "Ekspor",
+      "copy": "Salin ke Papan Klip",
+      "copied": "Tersalin!",
+      "download": {
+        "txt": "Unduh sebagai Teks (.txt)",
+        "md": "Unduh sebagai Markdown (.md)"
+      }
+    },
+    "image": {
+      "generating": "Menghasilkan visual yang memukau...",
+      "prompt": "Artikel yang bagus pantas mendapatkan gambar yang bagus.",
+      "button": "Buat Gambar Header"
+    },
+    "meta": {
+      "title": "Deskripsi Meta"
+    },
+    "seo": {
+      "title": "Analisis SEO",
+      "wordcount": "Jumlah Kata Total:",
+      "highlight": "Sorot Kata Kunci",
+      "table": {
+        "keyword": "Kata Kunci",
+        "frequency": "Frekuensi",
+        "density": "Kepadatan"
+      },
+      "keyword": {
+        "primary": "(Utama)",
+        "user": "(Pengguna)"
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan"
+    },
+    "intent": {
+      "title": "Niat Pencarian Utama",
+      "informational": "Pengguna sedang mencari informasi, fakta, atau jawaban atas pertanyaan spesifik.",
+      "commercial": "Pengguna sedang menyelidiki produk, layanan, atau merek sebelum melakukan pembelian.",
+      "transactional": "Pengguna ingin menyelesaikan tindakan tertentu, seperti membeli produk atau mendaftar.",
+      "navigational": "Pengguna mencoba menavigasi ke situs web atau lokasi fisik tertentu."
+    }
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "apiUrl": {
+      "label": "URL Server API",
+      "description": "URL ini digunakan untuk menyimpan dan mengambil artikel. Disimpan secara lokal di browser Anda."
+    },
+    "uiLanguage": {
+      "label": "Bahasa Antarmuka"
+    },
+    "articleLanguages": {
+      "label": "Bahasa Pembuatan Artikel",
+      "description": "Pilih bahasa yang Anda inginkan untuk pembuatan artikel."
+    },
+    "saveButton": {
+      "main": "Simpan Pengaturan",
+      "saved": "Tersimpan!"
+    }
+  }
+}
