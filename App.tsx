@@ -1,4 +1,4 @@
-
+'use client';
 import React, { useState, useCallback, useEffect } from 'react';
 import { generateSeoArticle, generateArticleImage } from './services/geminiService';
 import * as apiService from './services/apiService';
@@ -10,6 +10,7 @@ import { KeywordResearch } from './components/KeywordResearch';
 import { SavedArticles } from './components/SavedArticles';
 import { Settings } from './components/Settings';
 import { useI18n } from './hooks/useI18n';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 type View = 'generator' | 'research' | 'saved' | 'settings';
 
@@ -398,6 +399,8 @@ const App: React.FC = () => {
         }
         .animate-fade-in { animation: fade-in 0.5s ease-out forwards; }
       `}</style>
+
+      <SpeedInsights/>
       
       <header className="w-full max-w-4xl text-center mb-8">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-white">

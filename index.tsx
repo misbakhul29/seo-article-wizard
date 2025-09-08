@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { I18nProvider } from './hooks/useI18n';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const rootElement = document.getElementById('root');
 if (!rootElement) {
   throw new Error("Could not find root element to mount to");
@@ -12,7 +12,6 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(  
   <React.StrictMode>
-    <SpeedInsights/>
     <I18nProvider>
       <App />
     </I18nProvider>
