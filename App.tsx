@@ -11,7 +11,6 @@ import { SavedArticles } from './components/SavedArticles';
 import { Settings } from './components/Settings';
 import { useI18n } from './hooks/useI18n';
 import { SpeedInsights } from '@vercel/speed-insights/react';
-import { Analytics } from "@vercel/analytics/next"
 
 type View = 'generator' | 'research' | 'saved' | 'settings';
 
@@ -402,7 +401,6 @@ const App: React.FC = () => {
       `}</style>
 
       <SpeedInsights/>
-      <Analytics/>
       
       <header className="w-full max-w-4xl text-center mb-8">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-white">
